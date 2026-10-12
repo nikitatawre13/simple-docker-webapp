@@ -9,8 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/Opsoftinc-in/simple-docker-webapp.git'
+                checkout scm	
             }
         }
 
